@@ -12,3 +12,8 @@ def test_multiplicacao():
 
 def test_divisao():
     assert divisao(8, 2) == 4
+
+def divisao(a, b):
+    if b == 0:
+        raise ValueError("Divisão por zero")
+    return a / b
